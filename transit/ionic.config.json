@@ -1,0 +1,7 @@
+{
+  "name": "transit",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
