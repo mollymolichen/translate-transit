@@ -4,12 +4,15 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { TabsPage } from '../pages/tabs/tabs';
+import { LocationPage } from '../pages/location/location';
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
+  // TODO: change root page
   rootPage:any = TabsPage;
+  pages: Array<{ title: string, component: any }>;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
