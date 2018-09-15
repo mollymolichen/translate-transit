@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { LandmarksPage } from '../landmarks/landmarks';
-import { TransportationPage } from '../transportation/transportation';
-import { LocationPage } from '../location/location';
+import { LandmarksComponent } from '../landmarks/landmarks';
+import { TransportationComponent } from '../transportation/transportation';
+import { LocationComponent } from '../location/location';
 
 // TODO: testing from tutorial
 import {NavController, NavParams} from 'ionic-angular';
@@ -11,9 +11,9 @@ import {NavController, NavParams} from 'ionic-angular';
 })
 export class TabsPage {
 
-  tab1Root = LocationPage;
-  tab2Root = LandmarksPage;
-  tab3Root = TransportationPage;
+  tab1Root = LocationComponent;
+  tab2Root = LandmarksComponent;
+  tab3Root = TransportationComponent;
   
   /*selectedItem: any;
   icons: string[];
@@ -35,6 +35,6 @@ export class TabsPage {
 
   // try to append items onto location (home) page
   /*itemTapped(event, tab1Root) {
-    this.navCtrl.push(LocationPage);
+    this.navCtrl.push(LocationComponent);
   }*/
 }

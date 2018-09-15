@@ -1,6 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import "~@ng-select/ng-select/themes/default.theme.css";
+/* @import "~@ng-select/ng-select/themes/material.theme.css"; */
 
+.blue {
+	background-color: #0f3b82 !important;
+}
+
+orange {
+	background-color: #f49b02 !important;
+}
+
+green {
+	background-color: #41722d !important;
+}
 
 body { 
   font-family: Roboto, Arial, sans-serif;
@@ -74,4 +87,28 @@ body {
 
 .location-button, .location-label, .dorm-label {
 	align-self: center;
+}
+.ng-select.lang-select {
+	width: 65px;
+	position: absolute;
+	display: inline;
+	z-index: 10;
+	margin: 5px;
+}
+
+.primary-lang {
+	right: 75px;
+	width: 65px;
+	position: initial;
+	display: inline;
+	z-index: 10;
+	margin: 5px;
+}
+
+.secondary-lang {
+	right: 0;
+}
+
+span.ng-clear-wrapper {
+	display: none;
 }

@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'page-landmarks',
   templateUrl: 'landmarks.html'
 })
-export class LandmarksPage {
+export class LandmarksComponent {
 
   constructor() {
 

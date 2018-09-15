@@ -1,33 +1,40 @@
+<ng-select class="lang-select primary-lang" [searchable]="false" [items]="languages" [(ngModel)]="primaryLanguageCode" bindLabel="language" bindValue="code">
+    <ng-template ng-label-tmp let-item="item">
+        <span class="flag-icon flag-icon-{{item.code}}"></span>
+    </ng-template>
+    <ng-template ng-option-tmp let-item="item" let-index="index">
+        <span class="flag-icon flag-icon-{{item.code}}"></span>
+    </ng-template>
+</ng-select>
+<ng-select class="lang-select secondary-lang" [searchable]="false" [items]="languages" [(ngModel)]="secondaryLanguageCode" bindLabel="language" bindValue="code">
+    <ng-template ng-label-tmp let-item="item">
+        <span class="flag-icon flag-icon-{{item.code}}"></span>
+    </ng-template>
+    <ng-template ng-option-tmp let-item="item" let-index="index">
+        <span class="flag-icon flag-icon-{{item.code}}"></span>
+    </ng-template>
+</ng-select>
+
+<!--Call MS text translate using selected languages-->
+
 
   <mat-tab-group [color]="header.color" [backgroundColor]="header.background">
-    <mat-tab label="First"> 
+    <mat-tab label="Location"> 
+      <page-location></page-location>
       <div class="container">
 
-        <div class="locations-row-container">
-            <label class="location-label">Select your location:</label>
-            <button mat-raised-button color="primary" class="location-button east" (click)="updateDropdown(campuses.east.name)">East</button>
-            <button mat-raised-button color="primary" class="location-button central" (click)="updateDropdown(campuses.central.name)">Central</button>
-            <button mat-raised-button color="primary" class="location-button west"  (click)="updateDropdown(campuses.west.name)">West</button>
-        </div>
-
-        <div class="dorms-row-container">
-          <label class="dorm-label">Select your dorm:</label>
-          <form class="dorm-form">
-              <mat-form-field class="example-full-width">
-                <input type="text" placeholder="Pick one" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
-                <mat-autocomplete #auto="matAutocomplete">
-                  <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
-                    {{option}}
-                  </mat-option>
-                </mat-autocomplete>
-              </mat-form-field>
-            </form>
-        </div>
-          
       </div>
     </mat-tab>
-    <mat-tab label="Second"> Content 2 </mat-tab>
-    <mat-tab label="Third"> Content 3 </mat-tab>
+
+    <mat-tab label="Landmarks">
+      <div class="container">
+        <div class="locations-row-container">
+            <button mat-raised-button color="primary" class="location-button east" (click)="updateDropdown(campuses.east.name)">Landmarks</button>
+            <button mat-raised-button color="primary" class="location-button west"  (click)="updateDropdown(campuses.west.name)">Food/Dining</button>
+            <button mat-raised-button color="primary" class="location-button central" (click)="updateDropdown(campuses.central.name)">Residence Halls</button>
+        </div>
+      </div>
+    </mat-tab>
+    
+    <mat-tab label="Transportation" routerLink="/transportation">Transportation</mat-tab>
   </mat-tab-group>
-  
-  

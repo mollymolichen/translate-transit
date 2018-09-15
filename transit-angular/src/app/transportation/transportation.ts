@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'page-transportation',
   templateUrl: 'transportation.html'
 })
-export class TransportationPage {
+export class TransportationComponent {
 
   constructor() {
 

@@ -5,7 +5,7 @@ import { NavController } from 'ionic-angular';
   selector: 'page-landmarks',
   templateUrl: 'landmarks.html'
 })
-export class LandmarksPage {
+export class LandmarksComponent {
 
   constructor(public navCtrl: NavController) {
 

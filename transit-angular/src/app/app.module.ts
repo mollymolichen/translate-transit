@@ -1,3 +1,4 @@
+// imports
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -8,14 +9,16 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {AppRoutingModule} from './app-routing.module';
+import { NgSelectModule } from '@ng-select/ng-select';
 
-
+// declarations
 import { AppComponent } from './app.component';
+import { LocationComponent } from './location/location';
+import { LandmarksComponent } from './landmarks/landmarks';
+import { TransportationComponent } from './transportation/transportation';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -26,7 +29,15 @@ import { AppComponent } from './app.component';
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
-    MatGridListModule
+    MatGridListModule,
+    AppRoutingModule,
+    NgSelectModule
+  ],
+  declarations: [
+    AppComponent,
+    LocationComponent,
+    LandmarksComponent,
+    TransportationComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

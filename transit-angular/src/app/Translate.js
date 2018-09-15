@@ -8,13 +8,13 @@ let https = require ('https');
 // **********************************************
 
 // Replace the subscriptionKey string value with your valid subscription key.
-let subscriptionKey = 'ENTER KEY HERE';
+let subscriptionKey = '87b041bf47154c54b30bb6b3d1c1d537';
 
 let host = 'api.cognitive.microsofttranslator.com';
 let path = '/translate?api-version=3.0';
 
-// Translate to German and Italian.
-let params = '&to=de&to=it';
+// Translate to Chinese and German.
+let params = '&to=cn&to=de';
 
 let text = 'Hello, world!';
 
@@ -51,7 +51,7 @@ let Translate = function (content) {
         }
     };
 
-    let req = https.request (request_params, response_handler);
+    let req = https.request(request_params, response_handler);
     req.write (content);
     req.end ();
 }

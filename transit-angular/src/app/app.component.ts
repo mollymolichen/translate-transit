@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl} from '@angular/forms';
-import {Observable} from 'rxjs';
-import {map, startWith} from 'rxjs/operators';
+
 
 @Component({
   selector: 'app-root',
@@ -15,41 +13,18 @@ export class AppComponent implements OnInit {
     background: "primary"
   }
 
-  campuses = {
-    east: {
-      name: "east",
-      options: ['One', 'Two', 'Three']
-    },
-    central: {
-      name: "central",
-      options: ['Four', 'Five', 'Six']
-    },
-    west: {
-      name: "west",
-      options: ['Seven', 'Eight', 'Nine']
-    }
-  }
+  primaryLanguageCode = 'us';
+  secondaryLanguageCode = 'cn';
 
-  myControl = new FormControl();
-  options: string[] = this.campuses.east.options;
-  filteredOptions: Observable<string[]>;
+  languages = [
+      { code: 'cn', language: 'Chinese' },
+      { code: 'iq', language: 'Arabic' },
+      { code: 'us', language: 'English' },
+      { code: 'mx', language: 'Spanish' },
+      { code: 'fr', language: 'French' },
+  ]
 
-  ngOnInit() {
-    this.filteredOptions = this.myControl.valueChanges
-      .pipe(
-        startWith(''),
-        map(value => this._filter(value))
-      );
-  }
+   ngOnInit() {
 
-  private _filter(value: string): string[] {
-    const filterValue = value.toLowerCase();
-
-    return this.options.filter(option => option.toLowerCase().includes(filterValue));
-  }
-
-  updateDropdown(campus: string) {
-    this.options = this.campuses[campus].options;
-    this.ngOnInit();
-  }
+   }
 }
