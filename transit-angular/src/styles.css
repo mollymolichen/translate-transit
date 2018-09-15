@@ -1,1 +1,77 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+
+body { 
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+}
+
+.basic-container {
+  padding: 30px;
+}
+
+.version-info {
+  font-size: 8pt;
+  float: right;
+}
+
+body {
+	height: 100%;
+	background-image: url("https://prod-tab2017-media.gladly.io/img/backgrounds/94bbd29b17fe4fa3b45777281a392f21.jpg");
+    background-repeat: no-repeat;
+}
+
+.example-button-toggle-label {
+	display: inline-block;
+	margin: 16px;
+  }
+
+.mat-tab-body-content, mat-tab-body, .mat-tab-body-wrapper {
+	  height: 100vh;
+}
+
+
+.container {
+	display: inline-flex; /* or flex */
+	margin-top: 40px;
+	height: 30vh;
+	width: 100%;
+	flex-direction: column;
+	justify-content: space-around
+}
+
+.locations-row-container, .dorms-row-container {
+	display: inline-flex; /* or flex */
+	width: 100%;
+	flex-direction: row;
+}
+
+
+.dorm-label, .location-label {
+	margin-left: 169px;
+}
+
+.location-button.east {
+	margin-left: 190px;
+}
+
+.location-button.central {
+	margin-left: 50px;
+}
+
+.location-button.west {
+	margin-left: 50px;
+}
+
+.dorm-form {
+	margin-left: 190px;
+}
+
+.dorm-form, mat-form-field {
+	width: 400px;
+}
+
+.location-button, .location-label, .dorm-label {
+	align-self: center;
+}

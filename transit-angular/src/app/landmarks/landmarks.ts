@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
 
 @Component({
   selector: 'page-landmarks',
@@ -7,11 +6,8 @@ import { NavController } from 'ionic-angular';
 })
 export class LandmarksPage {
 
-  constructor(public navCtrl: NavController) {
+  constructor() {
 
   }
 
-  switchTabs(){
-    this.navCtrl.parent.select()
-  }
 }
