@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormControl} from '@angular/forms';
 import {Observable} from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
+import { TranslateService } from '../translate.service';
 
 import { TransportationComponent } from '../transportation/transportation';
 import { LandmarksComponent } from '../landmarks/landmarks';
@@ -13,7 +14,7 @@ import { LandmarksComponent } from '../landmarks/landmarks';
 })
 
 export class LocationComponent implements OnInit {
-	constructor() {
+	constructor(private translateService: TranslateService) {
 
   }
 

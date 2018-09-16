@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import * as Location from '../location/location';
 import { Observable } from 'rxjs';
+import { TranslateService } from '../translate.service';
 // import * as distances from './distance-to-from.json';
 export interface Tile {
   color: string;
@@ -18,7 +19,7 @@ export class LandmarksComponent {
   distsFromSource: Observable<any[]>;
   // TODO: add a 'dists' var to iterate thru distsFromSource???
 
-  constructor() {
+  constructor(private translateService: TranslateService) {
   }
 
   // getDistances(){

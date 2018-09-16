@@ -1,6 +1,6 @@
 <!--Flag language selectors-->
-<ng-select class="lang-select primary-lang" [searchable]="false" [items]="languages" [(ngModel)]="primaryFlagCode" 
-bindLabel="language" bindValue="flagCode">
+<ng-select class="lang-select primary-lang" [searchable]="false" [items]="languages" [(ngModel)]="primaryFlagCode"
+bindLabel="language" bindValue="flagCode" (change)="setPrimaryLanguage($event)">
     <ng-template ng-label-tmp let-item="item">
         <span class="flag-icon flag-icon-{{item.flagCode}}"></span>
     </ng-template>
@@ -8,7 +8,8 @@ bindLabel="language" bindValue="flagCode">
         <span class="flag-icon flag-icon-{{item.flagCode}}"></span>
     </ng-template>
 </ng-select>
-<ng-select class="lang-select secondary-lang" [searchable]="false" [items]="languages" [(ngModel)]="secondaryFlagCode" bindLabel="language" bindValue="flagCode">
+<ng-select class="lang-select secondary-lang" [searchable]="false" [items]="languages" [(ngModel)]="secondaryFlagCode"
+bindLabel="language" bindValue="flagCode" (change)="setSecondaryLanguage($event)">
     <ng-template ng-label-tmp let-item="item">
         <span class="flag-icon flag-icon-{{item.flagCode}}"></span>
     </ng-template>
@@ -16,24 +17,33 @@ bindLabel="language" bindValue="flagCode">
         <span class="flag-icon flag-icon-{{item.flagCode}}"></span>
     </ng-template>
 </ng-select>
-<div class="button apply-button">
+<!-- <div class="button apply-button">
     <button class="button apply-button" (click)="changeLanguages()">Apply</button>
-</div>
+</div> -->
 
 <!--Header-->
 <mat-tab-group [color]="header.color" [backgroundColor]="header.background">
   <!--Location page-->
-  <mat-tab label="Location"> 
+  <mat-tab
+    [label]="translateService.primaryTranslation.location"
+    [matTooltip]="translateService.secondaryTranslation.location"
+> 
     <page-location></page-location>
   </mat-tab>
 
   <!--Landmarks page-->
-  <mat-tab label="Landmarks">
+  <mat-tab
+    [label]="translateService.primaryTranslation.landmarks"
+    [matTooltip]="translateService.secondaryTranslation.landmarks"
+  >
     <page-landmarks></page-landmarks>
   </mat-tab>
   
   <!--Transportation page-->
-  <mat-tab label="Transportation">
+  <mat-tab
+    [label]="translateService.primaryTranslation.transportation"
+    [matTooltip]="translateService.secondaryTranslation.transportation"
+>
     <page-transportation></page-transportation>
   </mat-tab>
 

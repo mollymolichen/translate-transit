@@ -1,16 +1,26 @@
 <div class="container">
     <div class="locations-row-container">
-        <label class="location-label">Select your location:</label>
-        <button mat-raised-button color="primary" class="location-button east" (click)="updateDropdown(campuses.east.name)">East</button>
-        <button mat-raised-button color="primary" class="location-button west"  (click)="updateDropdown(campuses.west.name)">West</button>
-        <button mat-raised-button color="primary" class="location-button central" (click)="updateDropdown(campuses.central.name)">Central</button>
+        <label class="location-label" [matTooltip]="translateService.secondaryTranslation.selectLocation">
+          {{translateService.primaryTranslation.selectLocation}}:
+        </label>
+        <button mat-raised-button [matTooltip]="translateService.secondaryTranslation.east" color="primary" class="location-button east" (click)="updateDropdown(campuses.east.name)">
+          {{translateService.primaryTranslation.east}}
+        </button>
+        <button mat-raised-button [matTooltip]="translateService.secondaryTranslation.west" color="primary" class="location-button west"  (click)="updateDropdown(campuses.west.name)">
+          {{translateService.primaryTranslation.west}}
+        </button>
+        <button mat-raised-button [matTooltip]="translateService.secondaryTranslation.central" color="primary" class="location-button central" (click)="updateDropdown(campuses.central.name)">
+          {{translateService.primaryTranslation.central}}
+        </button>
     </div>
 
     <div class="dorms-row-container">
-      <label class="dorm-label">Select your dorm:</label>
+      <label class="dorm-label" [matTooltip]="translateService.secondaryTranslation.selectDorm">
+        {{translateService.primaryTranslation.selectDorm}}:
+      </label>
       <form class="dorm-form">
           <mat-form-field class="example-full-width">
-            <input type="text" placeholder="Pick one" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
+            <input type="text" [placeholder]="translateService.primaryTranslation.pickOne" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
             <mat-autocomplete #auto="matAutocomplete">
               <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
                 {{option}}
@@ -18,10 +28,20 @@
             </mat-autocomplete>
           </mat-form-field>
         </form>
-      <button mat-raised-button color="primary" class="button submit-button" (click)="submitLocation()">Submit</button>
+      <button
+        mat-raised-button
+        color="primary"
+        class="button submit-button"
+        (click)="submitLocation()"
+        [matTooltip]="translateService.secondaryTranslation.submit"
+      >
+        {{translateService.primaryTranslation.submit}}
+      </button>
     </div>  
 
     <div>
-      <label class="dorm-label" (display)="myDorm">Your default location is set to: {{myDorm}}</label>
+      <label class="dorm-label" (display)="myDorm" [matTooltip]="translateService.secondaryTranslation.defaultLocation">
+        {{translateService.primaryTranslation.defaultLocation}}: {{myDorm}}
+      </label>
     </div>
 </div>

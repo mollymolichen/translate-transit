@@ -1,8 +1,24 @@
 <div class="container">
   <div class="locations-row-container">
-      <button mat-raised-button color="primary" class="location-button east" (click)="test()">Landmarks</button>
-      <button mat-raised-button color="primary" class="location-button west"  (click)="updateDropdown(campuses.west.name)">Food/Dining</button>
-      <button mat-raised-button color="primary" class="location-button central" (click)="updateDropdown(campuses.central.name)">Residence Halls</button>
+      <button mat-raised-button color="primary" class="location-button east" (click)="test()" [matTooltip]="translateService.secondaryTranslation.landmarks">
+        {{translateService.primaryTranslation.landmarks}}
+      </button>
+      <button mat-raised-button
+        color="primary"
+        class="location-button west"
+        (click)="updateDropdown(campuses.west.name)"
+        matTooltip="{{translateService.secondaryTranslation.food}}/{{translateService.secondaryTranslation.dining}}"
+      >
+        {{translateService.primaryTranslation.food}}/{{translateService.primaryTranslation.dining}}
+      </button>
+      <button mat-raised-button
+        color="primary"
+        class="location-button central"
+        (click)="updateDropdown(campuses.central.name)"
+        [matTooltip]="translateService.secondaryTranslation.residenceHalls"
+      >
+        {{translateService.primaryTranslation.residenceHalls}}
+      </button>
   </div>
 
   <!-- <mat-grid-list cols="3" rowHeight="2:1">
