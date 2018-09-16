@@ -1,0 +1,31 @@
+campus,source,destination,distance-mi,distance-km,time-mins
+East,Neighborhood 1,Chapel,2,3.22,15
+East,Neighborhood 1,West Union,1.9,3.059,13
+East,Neighborhood 1,Perkins Library,1.9,3.059,13
+East,Neighborhood 1,East Bus Stop,0.3,0.483,
+East,Neighborhood 1,Marketplace,0.1,0.161,
+East,Neighborhood 1,Lilly Library,0.2,0.322,
+East,Neighborhood 2,Chapel,1.7,2.737,11
+East,Neighborhood 2,West Union,1.7,2.737,9
+East,Neighborhood 2,Perkins Library,1.7,2.737,9
+East,Neighborhood 2,East Bus Stop,0.06,0.0966,
+East,Neighborhood 2,Marketplace,0.2,0.322,
+East,Neighborhood 2,Lilly Library,0.2,0.322,
+East,Neighborhood 3,Chapel,1.7,2.737,12
+East,Neighborhood 3,West Union,1.6,2.576,10
+East,Neighborhood 3,Perkins Library,1.7,2.737,10
+East,Neighborhood 3,East Bus Stop,0.3,0.483,
+East,Neighborhood 3,Marketplace,0.5,0.805,
+East,Neighborhood 3,Lilly Library,0.4,0.644,
+East,Neighborhood 4,Chapel,1.8,2.898,13
+East,Neighborhood 4,West Union,1.7,2.737,11
+East,Neighborhood 4,Perkins Library,1.7,2.737,11
+East,Neighborhood 4,East Bus Stop,0.2,0.322,
+East,Neighborhood 4,Marketplace,0.3,0.483,
+East,Neighborhood 4,Lilly Library,0.2,0.322,
+East,Neighborhood 5,Chapel,1.6,2.576,15
+East,Neighborhood 5,West Union,1.5,2.415,13
+East,Neighborhood 5,Perkins Library,1.5,2.415,13
+East,Neighborhood 5,East Bus Stop,0.3,0.483,
+East,Neighborhood 5,Marketplace,0.4,0.644,
+East,Neighborhood 5,Lilly Library,0.3,0.483,

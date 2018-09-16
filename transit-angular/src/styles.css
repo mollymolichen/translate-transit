@@ -133,3 +133,7 @@ h2 {
 	text-align: center;
 	z-index: 10;
 }
+
+mat-grid-tile {
+	background: lightblue;
+}

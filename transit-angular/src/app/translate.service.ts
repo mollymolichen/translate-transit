@@ -26,7 +26,6 @@ export class TranslateService {
     let params = `&from=${source}`+`&to=${dest}`;    
 
     let url: string = `${host}${path}${params}`;
-    console.log(url);
     let body = [{'Text' : ` ${content} `}];
     let headers = new HttpHeaders()
         .set('Content-Type', 'application/json')
@@ -45,5 +44,13 @@ export class TranslateService {
         () => {
             console.log("The POST observable is now completed.");
         });
-  }
+
+   /** POST: add a new hero to the server */
+  //  addHero (hero: Hero): Observable<Hero> {
+  //   return this.http.post<Hero>(this.heroesUrl, hero, httpOptions).pipe(
+  //     tap((hero: Hero) => this.log(`added hero w/ id=${hero.id}`)),
+  //     catchError(this.handleError<Hero>('addHero'))
+  //   );
+  // }
+      }
 }

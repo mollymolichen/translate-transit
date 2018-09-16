@@ -1,13 +1,8 @@
-<head>
-  <title>Transportation</title>
-</head>
-
-<body>
-  <!--<ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>-->
-<body>
+<mat-grid-list cols="2" rowHeight="2:1">
+  <mat-grid-tile>1</mat-grid-tile>
+  <mat-grid-tile>2</mat-grid-tile>
+  <mat-grid-tile>3</mat-grid-tile>
+  <mat-grid-tile>4</mat-grid-tile>
+  
+  <mat-option *ngFor="let dist of distsFromSource | async" [value]="option"></mat-option>
+</mat-grid-list>

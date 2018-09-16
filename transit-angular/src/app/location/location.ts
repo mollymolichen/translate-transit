@@ -17,6 +17,7 @@ export class LocationComponent implements OnInit {
 
   }
 
+  // global vars
   campuses = {
     east: {
       name: "east",
@@ -55,10 +56,10 @@ export class LocationComponent implements OnInit {
     this.ngOnInit();
   }
 
-   submitLocation(){
-		console.log("submit location");
+  submitLocation(){
+    localStorage.setItem('myDorm', this.myControl.value);
     this.myDorm = this.myControl.value;
-    console.log(this.myDorm);
     return this.myDorm;
-   }
+  }
+  // export = submitLocation;
 }
