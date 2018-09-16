@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from './translate.service'
 
 
 @Component({
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+
   title = 'transit-angular';
   header = {
     color: "accent",
@@ -24,7 +26,11 @@ export class AppComponent implements OnInit {
       { code: 'fr', language: 'French' },
   ]
 
-   ngOnInit() {
 
+  constructor(private translateService: TranslateService) {
+  }
+
+   ngOnInit() {
+    this.translateService.translate("Hello world!").subscribe(hero => this.heroes.push(hero));
    }
 }

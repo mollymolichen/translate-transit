@@ -17,6 +17,8 @@ import { AppComponent } from './app.component';
 import { LocationComponent } from './location/location';
 import { LandmarksComponent } from './landmarks/landmarks';
 import { TransportationComponent } from './transportation/transportation';
+import { TranslateService } from './translate.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
@@ -31,7 +33,8 @@ import { TransportationComponent } from './transportation/transportation';
     MatButtonModule,
     MatGridListModule,
     AppRoutingModule,
-    NgSelectModule
+    NgSelectModule,
+    HttpClientModule
   ],
   declarations: [
     AppComponent,
@@ -39,7 +42,7 @@ import { TransportationComponent } from './transportation/transportation';
     LandmarksComponent,
     TransportationComponent
   ],
-  providers: [],
+  providers: [TranslateService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
