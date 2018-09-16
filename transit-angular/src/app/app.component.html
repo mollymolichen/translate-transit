@@ -1,4 +1,6 @@
-<ng-select class="lang-select primary-lang" [searchable]="false" [items]="languages" [(ngModel)]="primaryLanguageCode" bindLabel="language" bindValue="flagCode">
+<!--Flag language selectors-->
+<ng-select class="lang-select primary-lang" [searchable]="false" [items]="languages" [(ngModel)]="primaryFlagCode" 
+bindLabel="language" bindValue="flagCode">
     <ng-template ng-label-tmp let-item="item">
         <span class="flag-icon flag-icon-{{item.flagCode}}"></span>
     </ng-template>
@@ -6,7 +8,7 @@
         <span class="flag-icon flag-icon-{{item.flagCode}}"></span>
     </ng-template>
 </ng-select>
-<ng-select class="lang-select secondary-lang" [searchable]="false" [items]="languages" [(ngModel)]="secondaryLanguageCode" bindLabel="language" bindValue="flagCode">
+<ng-select class="lang-select secondary-lang" [searchable]="false" [items]="languages" [(ngModel)]="secondaryFlagCode" bindLabel="language" bindValue="flagCode">
     <ng-template ng-label-tmp let-item="item">
         <span class="flag-icon flag-icon-{{item.flagCode}}"></span>
     </ng-template>
@@ -14,27 +16,26 @@
         <span class="flag-icon flag-icon-{{item.flagCode}}"></span>
     </ng-template>
 </ng-select>
+<div class="button apply-button">
+    <button class="button apply-button" (click)="changeLanguages()">Apply</button>
+</div>
 
-<!--Call MS text translate using selected languages-->
+<!--Header-->
+<mat-tab-group [color]="header.color" [backgroundColor]="header.background">
+  <!--Location page-->
+  <mat-tab label="Location"> 
+    <page-location></page-location>
+  </mat-tab>
 
+  <!--Landmarks page-->
+  <mat-tab label="Landmarks">
+    <page-landmarks></page-landmarks>
+  </mat-tab>
+  
+  <!--Transportation page-->
+  <mat-tab label="Transportation">
+    <page-transportation></page-transportation>
+  </mat-tab>
 
-  <mat-tab-group [color]="header.color" [backgroundColor]="header.background">
-    <mat-tab label="Location"> 
-      <page-location></page-location>
-      <div class="container">
-
-      </div>
-    </mat-tab>
-
-    <mat-tab label="Landmarks">
-      <div class="container">
-        <div class="locations-row-container">
-            <button mat-raised-button color="primary" class="location-button east" (click)="updateDropdown(campuses.east.name)">Landmarks</button>
-            <button mat-raised-button color="primary" class="location-button west"  (click)="updateDropdown(campuses.west.name)">Food/Dining</button>
-            <button mat-raised-button color="primary" class="location-button central" (click)="updateDropdown(campuses.central.name)">Residence Halls</button>
-        </div>
-      </div>
-    </mat-tab>
-    
-    <mat-tab label="Transportation" routerLink="/transportation">Transportation</mat-tab>
-  </mat-tab-group>
+  <h2>Title</h2>
+</mat-tab-group>

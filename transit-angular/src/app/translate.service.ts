@@ -18,12 +18,12 @@ export class TranslateService {
     });
   }
 
-  translate(content: string, source: string, dest: string) {
+  translate(content: string, source: string, dest: string) {    // returns JSON
+    console.log(source + ' ' + dest);
     let subscriptionKey = '2143d6e1024f4580a1007aa5f8ee334c';
     let host = 'https://api.cognitive.microsofttranslator.com';
     let path = '/translate?api-version=3.0';
     let params = `&from=${source}`+`&to=${dest}`;    
-    // let text = 'Hello world';
 
     let url: string = `${host}${path}${params}`;
     console.log(url);

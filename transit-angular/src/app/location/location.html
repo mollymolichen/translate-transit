@@ -18,5 +18,10 @@
             </mat-autocomplete>
           </mat-form-field>
         </form>
+      <button mat-raised-button color="primary" class="button submit-button" (click)="submitLocation()">Submit</button>
+    </div>  
+
+    <div>
+      <label class="dorm-label" (display)="myDorm">Your default location is set to: {{myDorm}}</label>
     </div>
-  </div>
+</div>

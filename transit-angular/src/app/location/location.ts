@@ -33,6 +33,7 @@ export class LocationComponent implements OnInit {
   }
 
   myControl = new FormControl();
+  myDorm = "";
   options: string[] = this.campuses.east.options;
   filteredOptions: Observable<string[]>;
 
@@ -46,7 +47,6 @@ export class LocationComponent implements OnInit {
 
   private _filter(value: string): string[] {
     const filterValue = value.toLowerCase();
-
     return this.options.filter(option => option.toLowerCase().includes(filterValue));
   }
 
@@ -54,4 +54,11 @@ export class LocationComponent implements OnInit {
     this.options = this.campuses[campus].options;
     this.ngOnInit();
   }
+
+   submitLocation(){
+		console.log("submit location");
+    this.myDorm = this.myControl.value;
+    console.log(this.myDorm);
+    return this.myDorm;
+   }
 }

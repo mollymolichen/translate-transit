@@ -31,8 +31,8 @@ body {
 
 body {
 	height: 100%;
-	background-image: url("https://prod-tab2017-media.gladly.io/img/backgrounds/94bbd29b17fe4fa3b45777281a392f21.jpg");
-    background-repeat: no-repeat;
+	background-image: url('www/imgs/bkgd-blur.png');
+  background-repeat: no-repeat;
 }
 
 .example-button-toggle-label {
@@ -88,6 +88,7 @@ body {
 .location-button, .location-label, .dorm-label {
 	align-self: center;
 }
+
 .ng-select.lang-select {
 	width: 65px;
 	position: absolute;
@@ -109,6 +110,26 @@ body {
 	right: 0;
 }
 
+.button {
+	position: absolute;
+	z-index: 10;
+	margin: 8px;
+}
+
+.apply-button {
+	right: 70px;
+}
+
+.submit-button {
+	left: 30px;
+	align-self: center;
+}
+
 span.ng-clear-wrapper {
 	display: none;
+}
+
+h2 {
+	text-align: center;
+	z-index: 10;
 }
