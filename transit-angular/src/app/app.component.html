@@ -17,6 +17,8 @@ bindLabel="language" bindValue="flagCode" (change)="setSecondaryLanguage($event)
         <span class="flag-icon flag-icon-{{item.flagCode}}"></span>
     </ng-template>
 </ng-select>
+<mat-icon color="accent" class="toggle-button" (click)="toggleLanguage()">compare_arrows</mat-icon>
+
 <!-- <div class="button apply-button">
     <button class="button apply-button" (click)="changeLanguages()">Apply</button>
 </div> -->

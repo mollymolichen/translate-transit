@@ -60,4 +60,21 @@ export class AppComponent implements OnInit {
     localStorage.setItem('secondaryLang', this.secondaryLang);
    }
 
+   toggleLanguage() {
+    let primary = this.primaryLang;   // ptrs to dictionary
+    let secondary = this.secondaryLang;
+
+    this.translateService.primaryTranslation = this.translateService.translations[secondary];
+    this.translateService.secondaryTranslation = this.translateService.translations[primary];
+
+    localStorage.setItem('primaryLang', secondary);            // ptrs to lang code
+    localStorage.setItem('secondaryLang', primary);
+    
+    this.primaryFlagCode = _.find(this.languages, { langCode: secondary }).flagCode;
+    this.secondaryFlagCode = _.find(this.languages, { langCode: primary }).flagCode;
+    
+    this.primaryLang = secondary;
+    this.secondaryLang = primary;
+   }
+
 }

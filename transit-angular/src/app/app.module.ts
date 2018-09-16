@@ -12,6 +12,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {AppRoutingModule} from './app-routing.module';
 import { NgSelectModule } from '@ng-select/ng-select';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatIconModule} from '@angular/material/icon';
 
 // declarations
 import { AppComponent } from './app.component';
@@ -36,7 +37,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     NgSelectModule,
     HttpClientModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatIconModule
   ],
   declarations: [
     AppComponent,
