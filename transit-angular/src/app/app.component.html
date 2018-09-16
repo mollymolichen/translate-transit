@@ -1,17 +1,17 @@
-<ng-select class="lang-select primary-lang" [searchable]="false" [items]="languages" [(ngModel)]="primaryLanguageCode" bindLabel="language" bindValue="code">
+<ng-select class="lang-select primary-lang" [searchable]="false" [items]="languages" [(ngModel)]="primaryLanguageCode" bindLabel="language" bindValue="flagCode">
     <ng-template ng-label-tmp let-item="item">
-        <span class="flag-icon flag-icon-{{item.code}}"></span>
+        <span class="flag-icon flag-icon-{{item.flagCode}}"></span>
     </ng-template>
     <ng-template ng-option-tmp let-item="item" let-index="index">
-        <span class="flag-icon flag-icon-{{item.code}}"></span>
+        <span class="flag-icon flag-icon-{{item.flagCode}}"></span>
     </ng-template>
 </ng-select>
-<ng-select class="lang-select secondary-lang" [searchable]="false" [items]="languages" [(ngModel)]="secondaryLanguageCode" bindLabel="language" bindValue="code">
+<ng-select class="lang-select secondary-lang" [searchable]="false" [items]="languages" [(ngModel)]="secondaryLanguageCode" bindLabel="language" bindValue="flagCode">
     <ng-template ng-label-tmp let-item="item">
-        <span class="flag-icon flag-icon-{{item.code}}"></span>
+        <span class="flag-icon flag-icon-{{item.flagCode}}"></span>
     </ng-template>
     <ng-template ng-option-tmp let-item="item" let-index="index">
-        <span class="flag-icon flag-icon-{{item.code}}"></span>
+        <span class="flag-icon flag-icon-{{item.flagCode}}"></span>
     </ng-template>
 </ng-select>
 
