@@ -40,7 +40,12 @@ export class TranslateService {
    {code: 'selectLocation', text: 'Select your location'},
    {code: 'selectDorm', text: 'Select your dorm'},
    {code: 'defaultLocation', text: 'Your default location is set to'},
-   {code: 'pickOne', text: 'Pick one'}
+   {code: 'pickOne', text: 'Pick one'},
+   {code: 'transInfo', text: 'Learn more about transportation options on campus:'},
+   {code: 'dukeBus', text: 'Duke Bus System'},
+   {code: 'transloc', text:'Transloc: Bus Tracking App'},
+   {code: 'parking', text: 'Parking on Campus'},
+   {code: 'altTransport', text:'Alternate Transportation'}
   ]
 
   constructor(private http: HttpClient) {}

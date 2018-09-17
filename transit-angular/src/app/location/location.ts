@@ -3,6 +3,9 @@ import {FormControl} from '@angular/forms';
 import {Observable} from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
 import { TranslateService } from '../translate.service';
+import { LandmarksComponent } from '../landmarks/landmarks.component';
+declare var require: any;
+var distanceJSON = require('../distance-to-from.json');
 
 @Component({
   selector: 'page-location',
@@ -11,7 +14,7 @@ import { TranslateService } from '../translate.service';
 })
 
 export class LocationComponent implements OnInit {
-	constructor(private translateService: TranslateService) {}
+	constructor(private translateService: TranslateService, private landmarks: LandmarksComponent) {}
 
   // global vars
   campuses = {
@@ -33,6 +36,7 @@ export class LocationComponent implements OnInit {
   myLocation = null;
   options: string[] = this.campuses.east.options;
   filteredOptions: Observable<string[]>;
+  distanceList: any[] = [];
 
   ngOnInit() {
     this.filteredOptions = this.myControl.valueChanges
@@ -53,8 +57,26 @@ export class LocationComponent implements OnInit {
   }
 
   submitLocation(){
-    localStorage.setItem('myLocation', this.myControl.value);
+    console.log("nowww im here");
+
     this.myLocation = this.myControl.value;
+    localStorage.setItem('myLocation', this.myControl.value);
+    
+    // // update distance list
+    // let distanceList = localStorage.getItem('distanceList') ? localStorage.getItem('distanceList') : null;
+    // if (distanceList){
+    //   let newDistanceList: any[] = [];
+    //   for (let i = 0; i < distanceJSON.length; i++){
+    //     if (distanceJSON[i].source === this.myLocation){
+    //       newDistanceList.push(distanceJSON[i]);
+    //     }
+    //   }
+      
+    //   localStorage.setItem('distanceList', JSON.stringify(newDistanceList));
+    //   this.landmarks.updateDistanceView();
+    //   console.log(localStorage);
+    // }
+
     return this.myLocation;
   }
 }

@@ -9,7 +9,6 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatGridListModule} from '@angular/material/grid-list';
-import {AppRoutingModule} from './app-routing.module';
 import { NgSelectModule } from '@ng-select/ng-select';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatIconModule} from '@angular/material/icon';
@@ -34,7 +33,6 @@ import { HttpClientModule } from '@angular/common/http';
     MatInputModule,
     MatButtonModule,
     MatGridListModule,
-    AppRoutingModule,
     NgSelectModule,
     HttpClientModule,
     MatTooltipModule,
@@ -46,7 +44,7 @@ import { HttpClientModule } from '@angular/common/http';
     LandmarksComponent,
     TransportationComponent
   ],
-  providers: [TranslateService],
+  providers: [TranslateService, LocationComponent, LandmarksComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
