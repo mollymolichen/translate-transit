@@ -1,20 +1,22 @@
 <div class="container landmarks">
   <div class="locations-row-container">
-      <button mat-raised-button color="primary" class="location-button east" [matTooltip]="translateService.secondaryTranslation.landmarks">
+      <button mat-raised-button 
+        color="primary" 
+        class="landmark-button east" 
+        [matTooltip]="translateService.secondaryTranslation.landmarks"
+      >
         {{translateService.primaryTranslation.landmarks}}
       </button>
       <button mat-raised-button
         color="primary"
-        class="location-button west"
-        (click)="updateDropdown(campuses.west.name)"
+        class="landmark-button west"
         matTooltip="{{translateService.secondaryTranslation.food}}/{{translateService.secondaryTranslation.dining}}"
       >
         {{translateService.primaryTranslation.food}}/{{translateService.primaryTranslation.dining}}
       </button>
       <button mat-raised-button
         color="primary"
-        class="location-button central"
-        (click)="updateDropdown(campuses.central.name)"
+        class="landmark-button central"
         [matTooltip]="translateService.secondaryTranslation.residenceHalls"
       >
         {{translateService.primaryTranslation.residenceHalls}}

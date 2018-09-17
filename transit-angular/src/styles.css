@@ -8,21 +8,17 @@
 	background-color: #0f3b82 !important;
 }
 
-orange {
+.orange {
 	background-color: #f49b02 !important;
 }
 
-green {
+.green {
 	background-color: #41722d !important;
 }
 
 body { 
   font-family: Roboto, Arial, sans-serif;
   margin: 0;
-}
-
-.basic-container {
-  padding: 30px;
 }
 
 .version-info {
@@ -43,6 +39,10 @@ body {
 
 .mat-tab-body-content, mat-tab-body, .mat-tab-body-wrapper {
 	  height: 100vh;
+}
+
+.mat-tab-labels {
+	background-color: #0f3b82 !important;
 }
 
 /*CONTAINERS*/
@@ -84,7 +84,20 @@ body {
 	flex-direction: row;
 }
 
-/*LABELS*/ 
+/*BUTTONS*/ 
+/*location*/
+.east {
+	background-color: #0f3b82 !important;
+}
+
+.west {
+	background-color: #f49b02 !important;
+}
+
+.central {
+	background-color: #41722d !important;
+}
+
 .dorm-label, .location-label {
 	margin-left: 169px;
 }
@@ -93,14 +106,44 @@ body {
 	margin-left: 190px;
 }
 
-.location-button.central {
-	margin-left: 50px;
-}
-
 .location-button.west {
 	margin-left: 50px;
 }
 
+.location-button.central {
+	margin-left: 50px;
+}
+/*location*/
+.landmark-button.east {
+	margin-right: 70px;
+}
+
+.landmark-button.west {
+	margin-left: 100px;
+}
+
+.landmark-button.central {
+	margin-left: 220px;
+}
+/*transportation*/
+/*misc*/
+.button {
+	position: absolute;
+	z-index: 10;
+	margin: 8px;
+}
+
+.apply-button {
+	right: 70px;
+}
+
+.submit-button {
+	left: 30px;
+	align-self: center;
+	background-color: #0f3b82 !important;
+}
+
+/*FORMS*/
 .dorm-form {
 	margin-left: 190px;
 }
@@ -143,21 +186,6 @@ mat-icon.mat-icon.mat-accent.toggle-button {
 
 .secondary-lang {
 	right: 0;
-}
-
-.button {
-	position: absolute;
-	z-index: 10;
-	margin: 8px;
-}
-
-.apply-button {
-	right: 70px;
-}
-
-.submit-button {
-	left: 30px;
-	align-self: center;
 }
 
 span.ng-clear-wrapper {
