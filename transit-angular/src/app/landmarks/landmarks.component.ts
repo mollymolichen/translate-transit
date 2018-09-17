@@ -11,7 +11,7 @@ import { LocationComponent } from '../location/location';
 })
 export class LandmarksComponent {
   myLocation = localStorage.getItem('myLocation') ? localStorage.getItem('myLocation') : 'N/A';
-  distanceList = localStorage.getItem('distanceList') ? JSON.parse(localStorage.getItem('distanceList')) : null;
+  distanceList = JSON.parse(localStorage.getItem('distanceList')) ? JSON.parse(localStorage.getItem('distanceList')) : [];
 
   constructor(private translateService: TranslateService) {
     
