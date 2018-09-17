@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
   private secondaryLang;
 
   languages = [
-    { flagCode: 'cn', langCode: 'zh-Hans', language: 'Chinese' },  // TODO: extract langCode from JSON if you want
+    { flagCode: 'cn', langCode: 'zh-Hans', language: 'Chinese' },
     { flagCode: 'iq', langCode: 'ar', language: 'Arabic' },
     { flagCode: 'us', langCode: 'en', language: 'English' },
     { flagCode: 'mx', langCode: 'es', language: 'Spanish' },
@@ -29,8 +29,6 @@ export class AppComponent implements OnInit {
 
 
   constructor(private translateService: TranslateService) {
-
-    console.log(localStorage.getItem('primaryLang'))
     // default values
     this.primaryFlagCode = localStorage.getItem('primaryLang') ? _.find(this.languages, { langCode: localStorage.getItem('primaryLang') }).flagCode : 'us';
     this.secondaryFlagCode = localStorage.getItem('secondaryLang') ? _.find(this.languages, { langCode: localStorage.getItem('secondaryLang') }).flagCode : 'cn';
@@ -45,33 +43,32 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {}
-
+  
+  // use lodash to quickly find element in json with same language code
   setPrimaryLanguage(){
-    this.primaryLang = _.find(this.languages, { flagCode: this.primaryFlagCode }).langCode;   // find element in json with same language code
+    this.primaryLang = _.find(this.languages, { flagCode: this.primaryFlagCode })["langCode"];   
     this.translateService.primaryTranslation = this.translateService.translations[this.primaryLang];
-
     localStorage.setItem('primaryLang', this.primaryLang);
    }
 
    setSecondaryLanguage(){
-    this.secondaryLang = _.find(this.languages, { flagCode: this.secondaryFlagCode }).langCode;
+    this.secondaryLang = _.find(this.languages, { flagCode: this.secondaryFlagCode })["langCode"];
     this.translateService.secondaryTranslation = this.translateService.translations[this.secondaryLang];
-
     localStorage.setItem('secondaryLang', this.secondaryLang);
    }
 
    toggleLanguage() {
-    let primary = this.primaryLang;   // ptrs to dictionary
+    let primary = this.primaryLang;                         // ptrs to dictionary
     let secondary = this.secondaryLang;
 
     this.translateService.primaryTranslation = this.translateService.translations[secondary];
     this.translateService.secondaryTranslation = this.translateService.translations[primary];
 
-    localStorage.setItem('primaryLang', secondary);            // ptrs to lang code
+    localStorage.setItem('primaryLang', secondary);         // ptrs to language code
     localStorage.setItem('secondaryLang', primary);
     
-    this.primaryFlagCode = _.find(this.languages, { langCode: secondary }).flagCode;
-    this.secondaryFlagCode = _.find(this.languages, { langCode: primary }).flagCode;
+    this.primaryFlagCode = _.find(this.languages, { langCode: secondary })["flagCode"];
+    this.secondaryFlagCode = _.find(this.languages, { langCode: primary })["flagCode"];
     
     this.primaryLang = secondary;
     this.secondaryLang = primary;

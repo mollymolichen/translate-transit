@@ -2,7 +2,7 @@ import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { LocationComponent } from './location/location';
-import { LandmarksComponent } from './landmarks/landmarks';
+import { LandmarksComponent } from './landmarks/landmarks.component';
 import { TransportationComponent } from './transportation/transportation';
 
 let routes: Routes = [

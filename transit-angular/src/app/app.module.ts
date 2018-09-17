@@ -17,7 +17,7 @@ import {MatIconModule} from '@angular/material/icon';
 // declarations
 import { AppComponent } from './app.component';
 import { LocationComponent } from './location/location';
-import { LandmarksComponent } from './landmarks/landmarks';
+import { LandmarksComponent } from './landmarks/landmarks.component';
 import { TransportationComponent } from './transportation/transportation';
 import { TranslateService } from './translate.service';
 import { HttpClientModule } from '@angular/common/http';

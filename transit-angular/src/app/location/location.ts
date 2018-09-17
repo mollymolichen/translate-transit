@@ -5,7 +5,7 @@ import {map, startWith} from 'rxjs/operators';
 import { TranslateService } from '../translate.service';
 
 import { TransportationComponent } from '../transportation/transportation';
-import { LandmarksComponent } from '../landmarks/landmarks';
+import { LandmarksComponent } from '../landmarks/landmarks.component';
 
 @Component({
   selector: 'page-location',
@@ -14,9 +14,7 @@ import { LandmarksComponent } from '../landmarks/landmarks';
 })
 
 export class LocationComponent implements OnInit {
-	constructor(private translateService: TranslateService) {
-
-  }
+	constructor(private translateService: TranslateService) {}
 
   // global vars
   campuses = {
@@ -35,7 +33,7 @@ export class LocationComponent implements OnInit {
   }
 
   myControl = new FormControl();
-  myDorm = "";
+  myLocation = null;
   options: string[] = this.campuses.east.options;
   filteredOptions: Observable<string[]>;
 
@@ -58,9 +56,8 @@ export class LocationComponent implements OnInit {
   }
 
   submitLocation(){
-    localStorage.setItem('myDorm', this.myControl.value);
-    this.myDorm = this.myControl.value;
-    return this.myDorm;
+    localStorage.setItem('myLocation', this.myControl.value);
+    this.myLocation = this.myControl.value;
+    return this.myLocation;
   }
-  // export = submitLocation;
 }

@@ -72,10 +72,9 @@ export class TranslateService {
   }
 
   generateTranslations() {
-    let params = '&from=en&to=zh-Hans&to=ar&to=en&to=es&to=fr';    
-
+    let params: string = '&from=en&to=zh-Hans&to=ar&to=en&to=es&to=fr';    // TODO: fill w/ all supported langs
     let url: string = `${this.host}${this.path}${params}`;
-    let body = this.phrases;
+    let body: any = this.phrases;
 
     return this.http.post(url, body, { headers: this.headers })
       .subscribe(
@@ -89,8 +88,7 @@ export class TranslateService {
               this.translations.fr[this.phrases[index].code] = element.translations[4].text;
             });
             console.log(this.translations);
-            // To save in local storage, uncomment next line
-            // localStorage.setItem('translations', translations.toString())
+            localStorage.setItem('translations', this.translations.toString());
         },
         response => {
             console.log("POST call in error", response);

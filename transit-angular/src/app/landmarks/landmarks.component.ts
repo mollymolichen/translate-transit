@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
-import * as Location from '../location/location';
 import { Observable } from 'rxjs';
 import { TranslateService } from '../translate.service';
-// import * as distances from './distance-to-from.json';
+// import * as distanceJSON from './distance-to-from.json';
+var distanceJSON = require('./distance-to-from.json');
+import * as _ from "lodash";
+
 export interface Tile {
   color: string;
   cols: number;
@@ -15,28 +17,9 @@ export interface Tile {
   templateUrl: 'landmarks.html'
 })
 export class LandmarksComponent {
-  // myDorm = Location.submitLocation();
-  distsFromSource: Observable<any[]>;
-  // TODO: add a 'dists' var to iterate thru distsFromSource???
+  // myLocation = localStorage.getItem('myLocation') ? localStorage.getItem('myLocation') : 'N/A';
+  distanceList: any[] = [];
 
-  constructor(private translateService: TranslateService) {
-  }
-
-  // getDistances(){
-  //   let distances = {};   // to satisfy compiler
-  //   let source = myDorm;
-  //   // let distsFromSource: any[] = [];
-
-  //   for (let entry in distances){
-  //     if (entry.source.equals(myDorm)){
-  //       this.distsFromSource.put(entry);
-  //     }
-  //   }
-
-  //   return this.distsFromSource;
-  //   // TODO: when calling getDistances, use ngFor to loop through JSON objs
-  //   // extract: {{destination}}, {{distance-mi}}, {{distance-km}}, {{time-mins}}
-  // }
   tiles: Tile[] = [
     {text: 'Duke Chapel', cols: 1, rows: 1, color: 'lightblue'},
     {text: 'West Union', cols: 1, rows: 1, color: 'lightgreen'},
@@ -49,8 +32,28 @@ export class LandmarksComponent {
     {text: 'Central Campus Dorms', cols: 1, rows: 1, color: '#DDBDF1'},
   ];
 
-  test() {
-    console.log(localStorage.getItem('myDorm'))
+  constructor(private translateService: TranslateService) {
+  }
+
+  ngOnInit(){
+    this.getDistances();
+  }
+
+  getDistances(){
+    // let distanceList2 = _.find(distanceJSON, { source : "this.myLocation" }.toString());
+    // let distanceList: any[] = [];
+    let myLoc = localStorage.getItem('myLocation') ? localStorage.getItem('myLocation') : 'N/A';
+    
+    for (let i = 0; i < distanceJSON.length; i++){
+      if (distanceJSON[i].source === myLoc){
+        this.distanceList.push(distanceJSON[i]);
+      }
+    }
+
+    console.log(this.distanceList);
+    console.log(JSON.stringify(this.distanceList));
+    localStorage.setItem('distanceList', JSON.stringify(this.distanceList));
+    return this.distanceList;
   }
 }
 
