@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container landmarks">
   <div class="locations-row-container">
       <button mat-raised-button color="primary" class="location-button east" [matTooltip]="translateService.secondaryTranslation.landmarks">
         {{translateService.primaryTranslation.landmarks}}
@@ -20,13 +20,14 @@
         {{translateService.primaryTranslation.residenceHalls}}
       </button>
   </div>
-
-  <!-- <mat-grid-list cols="3" rowHeight="2:1">
-    <mat-grid-tile>
-      <mat-grid-tile-footer *ngFor="let dist of distsFromSource | async">{{dist.destination}}></mat-grid-tile-footer>
-    </mat-grid-tile>
-    
-    <mat-grid-tile gutterSize="16dp">2</mat-grid-tile>
+</div>
+<div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+  </div>
+  <!-- <mat-grid-list cols="3" rowHeight="2:1" gutterSize="16dp">
+    <mat-grid-tile >2</mat-grid-tile>
     <mat-grid-tile>3</mat-grid-tile>
     <mat-grid-tile>4</mat-grid-tile>
     <mat-grid-tile>1</mat-grid-tile>
@@ -34,17 +35,19 @@
     <mat-grid-tile>3</mat-grid-tile>
     <mat-grid-tile>4</mat-grid-tile>
     <mat-grid-tile>9</mat-grid-tile>
-
-    <mat-option *ngFor="let dist of distsFromSource | async" [value]="option"></mat-option> 
   </mat-grid-list> -->
 
-  <mat-grid-list cols="3" rowHeight="100px" gutterSize="16dp">
-      <mat-grid-tile
-          *ngFor="let tile of tiles"
-          [colspan]="tile.cols"
-          [rowspan]="tile.rows"
-          [style.background]="tile.color">
-        {{tile.text}}
-      </mat-grid-tile>
-  </mat-grid-list>
-</div>
+  <!-- <mat-grid-list cols="2" rowHeight="100px" gutterSize="16dp">
+      <mat-grid-tile>3</mat-grid-tile>
+    <mat-grid-tile>4</mat-grid-tile>
+    <mat-grid-tile>1</mat-grid-tile>
+    <mat-grid-tile>2</mat-grid-tile>
+  </mat-grid-list> -->
+
+  <!-- <mat-grid-tile
+  *ngFor="let tile of tiles"
+  [colspan]="tile.cols"
+  [rowspan]="tile.rows"
+  [style.background]="tile.color">
+{{tile.text}}
+</mat-grid-tile> -->

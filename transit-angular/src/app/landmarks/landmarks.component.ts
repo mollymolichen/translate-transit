@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
 import { TranslateService } from '../translate.service';
 // import * as distanceJSON from './distance-to-from.json';
+declare var require: any;
 var distanceJSON = require('./distance-to-from.json');
 import * as _ from "lodash";
 
@@ -49,9 +50,7 @@ export class LandmarksComponent {
         this.distanceList.push(distanceJSON[i]);
       }
     }
-
     console.log(this.distanceList);
-    console.log(JSON.stringify(this.distanceList));
     localStorage.setItem('distanceList', JSON.stringify(this.distanceList));
     return this.distanceList;
   }

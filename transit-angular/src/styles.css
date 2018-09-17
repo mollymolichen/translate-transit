@@ -3,6 +3,7 @@
 @import "~@ng-select/ng-select/themes/default.theme.css";
 /* @import "~@ng-select/ng-select/themes/material.theme.css"; */
 
+/*MISCELLANEOUS*/
 .blue {
 	background-color: #0f3b82 !important;
 }
@@ -44,7 +45,7 @@ body {
 	  height: 100vh;
 }
 
-
+/*CONTAINERS*/
 .container {
 	display: inline-flex; /* or flex */
 	margin-top: 40px;
@@ -54,13 +55,36 @@ body {
 	justify-content: space-around
 }
 
+.container.landmarks {
+	display: inline-flex; /* or flex */
+	height: 10vh;
+	width: 100%;
+	flex-direction: column;
+	justify-content: space-around
+}
+
+.flex-container {
+	display: flex;
+	justify-content: center;
+	background-color: DodgerBlue;
+}
+
+.flex-container > div {
+	background-color: #f1f1f1;
+	width: 100px;
+	margin: 10px;
+	text-align: center;
+	line-height: 75px;
+	font-size: 30px;
+  }
+
 .locations-row-container, .dorms-row-container {
 	display: inline-flex; /* or flex */
 	width: 100%;
 	flex-direction: row;
 }
 
-
+/*LABELS*/ 
 .dorm-label, .location-label {
 	margin-left: 169px;
 }
@@ -145,8 +169,9 @@ h2 {
 	z-index: 10;
 }
 
-mat-grid-tile {
+mat-grid-tile, mat-grid-list {
 	background: lightblue;
+	z-index: 10;
 }
 
 mat-icon {

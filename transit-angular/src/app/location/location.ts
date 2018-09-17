@@ -4,9 +4,6 @@ import {Observable} from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
 import { TranslateService } from '../translate.service';
 
-import { TransportationComponent } from '../transportation/transportation';
-import { LandmarksComponent } from '../landmarks/landmarks.component';
-
 @Component({
   selector: 'page-location',
   templateUrl: 'location.html',
