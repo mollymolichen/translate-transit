@@ -1,0 +1,37 @@
+campus,source,destination,distanceMi,distanceKm,time
+West,Craven,Chapel,0.1,0.161,4
+West,Craven,West Union,0.07,0.11,3
+West,Craven,Perkins Library,0.09,0.14,5
+West,Craven,East Bus Stop,1.7,2.737,9
+West,Craven,Marketplace,1.7,2.737,13
+West,Craven,Lilly Library,1.7,2.737,13
+West,Crowell,Chapel,0.3,0.483,6
+West,Crowell,West Union,0.2,0.322,4
+West,Crowell,Perkins Library,0.3,0.483,7
+West,Crowell,East Bus Stop,1.8,2.898,13
+West,Crowell,Marketplace,2,3.22,15
+West,Crowell,Lilly Library,1.9,3.059,15
+West,Kilgo,Chapel,0.3,0.483,4
+West,Kilgo,West Union,0.1,0.161,2
+West,Kilgo,Perkins Library,0.2,0.322,5
+West,Kilgo,East Bus Stop,1.7,2.737,12
+West,Kilgo,Marketplace,1.9,3.059,13
+West,Kilgo,Lilly Library,1.9,3.059,14
+West,Keohane,Chapel,0.4,0.644,9
+West,Keohane,West Union,0.3,0.483,7
+West,Keohane,Perkins Library,0.3,0.483,9
+West,Keohane,East Bus Stop,1.7,2.737,13
+West,Keohane,Marketplace,1.8,2.898,15
+West,Keohane,Lilly Library,1.8,2.898,15
+West,Edens,Chapel,0.4,0.644,10
+West,Edens,West Union,0.3,0.483,8
+West,Edens,Perkins Library,0.4,0.644,9
+West,Edens,East Bus Stop,1.6,2.576,14
+West,Edens,Marketplace,1.7,2.737,16
+West,Edens,Lilly Library,1.7,2.737,16
+West,Wannamaker,Chapel,0.4,0.644,10
+West,Wannamaker,West Union,0.3,0.483,8
+West,Wannamaker,Perkins Library,0.3,0.483,10
+West,Wannamaker,East Bus Stop,1.8,2.898,14
+West,Wannamaker,Marketplace,1.9,3.059,16
+West,Wannamaker,Lilly Library,1.9,3.059,16

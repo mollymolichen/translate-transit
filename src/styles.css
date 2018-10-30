@@ -1,0 +1,254 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import "~@ng-select/ng-select/themes/default.theme.css";
+/* @import "~@ng-select/ng-select/themes/material.theme.css"; */
+
+/*MISCELLANEOUS*/
+body { 
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+  height: 100%;
+  background-image: url('./assets/img/bkgd-blur.png');
+  background-repeat: no-repeat;
+}
+
+.version-info {
+  font-size: 8pt;
+  float: right;
+}
+
+.example-button-toggle-label {
+	display: inline-block;
+	margin: 16px;
+  }
+
+.mat-tab-body-content, mat-tab-body, .mat-tab-body-wrapper {
+	  height: 100vh;
+}
+
+.mat-tab-labels {
+	background-color: #0f3b82 !important;
+}
+
+/*CONTAINERS*/
+.container {
+	display: inline-flex; /* or flex */
+	margin-top: 40px;
+	height: 30vh;
+	width: 100%;
+	flex-direction: column;
+	justify-content: space-around
+}
+
+.container.landmarks {
+	display: inline-flex; /* or flex */
+	height: 10vh;
+	width: 100%;
+	flex-direction: column;
+	justify-content: space-around
+}
+
+.container.landmarks {
+	margin-top: 0px;
+	display: inline-flex; /* or flex */
+	height: 10vh;
+	width: 100%;
+	flex-direction: column;
+	justify-content: space-around
+}
+
+ .flex-container {
+	justify-content: center;
+	margin-top: 40px;
+	min-height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.flex-container > div {
+	width: 300px;
+	height: 300px;
+	margin: 10px;
+	text-align: center;
+	/* line-height: 75px; */
+	/* font-size: 30px; */
+}
+
+.landmark-container {
+	flex: flex;
+	flex-direction: row;
+}
+
+.flex-grid-elem {
+	width: 300px;
+	height: 300px;
+	/* width: calc(100% * (1/3)  - 10px - 1px); */
+	margin: 10px;
+	text-align: center;
+	/* line-height: 75px;
+	font-size: 16px; */
+	flex-wrap: wrap;
+	margin-left: 2%;
+	display: inline-block;
+	flex-grow: 1;
+	flex-basis: 25%;
+} 
+
+.flex-grid-elem-big {
+	width: 400px;
+	height: 400px;
+	margin: 30px;
+	text-align: center;
+	flex-wrap: wrap;
+	/* margin-left: 2%; */
+	display: inline-block;
+	flex-grow: 1;
+	flex-basis: 25%;
+} 
+
+.locations-row-container, .dorms-row-container {
+	display: inline-flex; /* or flex */
+	width: 100%;
+	flex-direction: row;
+}
+
+.location-center {
+	justify-content: center;
+}
+
+.east-nbhd {
+	margin-left: 170px;
+}
+
+/*BUTTONS*/ 
+/*location*/
+.east {
+	background-color: #0f3b82 !important;
+}
+
+.west {
+	background-color: #f49b02 !important;
+}
+
+.central {
+	background-color: #41722d !important;
+}
+
+.dorm-label, .location-label {
+	margin-left: 169px;
+}
+
+.location-button.east {
+	margin-left: 190px;
+}
+
+.location-button.west {
+	margin-left: 50px;
+}
+
+.location-button.central {
+	margin-left: 50px;
+}
+/*location*/
+.landmark-button.east {
+	margin-right: 70px;
+}
+
+.landmark-button.west {
+	margin-left: 100px;
+}
+
+.landmark-button.central {
+	margin-left: 220px;
+}
+
+.error-button.west {
+	margin-left: 170px;
+	margin-bottom: 20px;
+}
+
+.feedback-button.central {
+	margin-left: 170px;
+}
+/*transportation*/
+
+/*misc*/
+.button {
+	position: absolute;
+	z-index: 10;
+	margin: 8px;
+}
+
+.apply-button {
+	right: 70px;
+}
+
+.submit-button {
+	left: 30px;
+	align-self: center;
+	background-color: #0f3b82 !important;
+}
+
+/*FORMS*/
+.dorm-form {
+	margin-left: 190px;
+}
+
+.dorm-form, mat-form-field {
+	width: 400px;
+}
+
+.location-button, .location-label, .dorm-label {
+	align-self: center;
+}
+
+.ng-select.lang-select {
+	width: 65px;
+	position: absolute;
+	display: inline;
+	z-index: 10;
+	margin: 5px;
+}
+
+.primary-lang {
+	right: 115px;
+	width: 65px;
+	position: initial;
+	display: inline;
+	z-index: 10;
+	margin: 5px;
+}
+
+mat-icon.mat-icon.mat-accent.toggle-button {
+	right: 75px;
+	font-size: 25pt;
+	text-align: center;
+	position: absolute;
+	z-index: 10;
+	margin-right: 10px;
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+.secondary-lang {
+	right: 0;
+}
+
+span.ng-clear-wrapper {
+	display: none;
+}
+
+h2 {
+	text-align: center;
+	z-index: 10;
+}
+
+mat-grid-tile, mat-grid-list {
+	background: lightblue;
+	z-index: 10;
+}
+
+mat-icon {
+	z-index: 10;
+}

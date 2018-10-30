@@ -1,0 +1,47 @@
+<!--Flag language selectors-->
+<ng-select class="lang-select primary-lang" [searchable]="false" [items]="languages" [(ngModel)]="primaryFlagCode"
+bindLabel="language" bindValue="flagCode" (change)="setPrimaryLanguage($event)">
+    <ng-template ng-label-tmp let-item="item">
+        <span class="flag-icon flag-icon-{{item.flagCode}}"></span>
+    </ng-template>
+    <ng-template ng-option-tmp let-item="item" let-index="index">
+        <span class="flag-icon flag-icon-{{item.flagCode}}"></span>
+    </ng-template>
+</ng-select>
+<ng-select class="lang-select secondary-lang" [searchable]="false" [items]="languages" [(ngModel)]="secondaryFlagCode"
+bindLabel="language" bindValue="flagCode" (change)="setSecondaryLanguage($event)">
+    <ng-template ng-label-tmp let-item="item">
+        <span class="flag-icon flag-icon-{{item.flagCode}}"></span>
+    </ng-template>
+    <ng-template ng-option-tmp let-item="item" let-index="index">
+        <span class="flag-icon flag-icon-{{item.flagCode}}"></span>
+    </ng-template>
+</ng-select>
+<mat-icon color="accent" class="toggle-button" (click)="toggleLanguage()">compare_arrows</mat-icon>
+
+<!--Header-->
+<mat-tab-group [color]="header.color" [backgroundColor]="header.background">
+  <!--Location page-->
+  <mat-tab
+    [label]="translateService.primaryTranslation.location"
+    [matTooltip]="translateService.secondaryTranslation.location"
+> 
+    <page-location></page-location>
+  </mat-tab>
+
+  <!--Landmarks page-->
+  <mat-tab
+    [label]="translateService.primaryTranslation.landmarks"
+    [matTooltip]="translateService.secondaryTranslation.landmarks"
+  >
+    <page-landmarks></page-landmarks>
+  </mat-tab>
+  
+  <!--Transportation page-->
+  <mat-tab
+    [label]="translateService.primaryTranslation.transportation"
+    [matTooltip]="translateService.secondaryTranslation.transportation" 
+  >
+    <page-transportation></page-transportation>
+  </mat-tab>
+</mat-tab-group>

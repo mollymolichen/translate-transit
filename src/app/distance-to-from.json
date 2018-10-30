@@ -1,0 +1,530 @@
+[
+	{
+		"campus": "East",
+		"source": "Neighborhood 1",
+		"destination": "Chapel",
+		"distanceMi": 2,
+		"distanceKm": 3.22,
+		"time": 15
+	},
+	{
+		"campus": "East",
+		"source": "Neighborhood 1",
+		"destination": "West Union",
+		"distanceMi": 1.9,
+		"distanceKm": 3.059,
+		"time": 13
+	},
+	{
+		"campus": "East",
+		"source": "Neighborhood 1",
+		"destination": "Perkins Library",
+		"distanceMi": 1.9,
+		"distanceKm": 3.059,
+		"time": 13
+	},
+	{
+		"campus": "East",
+		"source": "Neighborhood 1",
+		"destination": "East Bus Stop",
+		"distanceMi": 0.3,
+		"distanceKm": 0.483,
+		"time": 6
+	},
+	{
+		"campus": "East",
+		"source": "Neighborhood 1",
+		"destination": "Marketplace",
+		"distanceMi": 0.1,
+		"distanceKm": 0.161,
+		"time": 4
+	},
+	{
+		"campus": "East",
+		"source": "Neighborhood 1",
+		"destination": "Lilly Library",
+		"distanceMi": 0.2,
+		"distanceKm": 0.322,
+		"time": 3
+	},
+	{
+		"campus": "East",
+		"source": "Neighborhood 2",
+		"destination": "Chapel",
+		"distanceMi": 1.7,
+		"distanceKm": 2.737,
+		"time": 11
+	},
+	{
+		"campus": "East",
+		"source": "Neighborhood 2",
+		"destination": "West Union",
+		"distanceMi": 1.7,
+		"distanceKm": 2.737,
+		"time": 9
+	},
+	{
+		"campus": "East",
+		"source": "Neighborhood 2",
+		"destination": "Perkins Library",
+		"distanceMi": 1.7,
+		"distanceKm": 2.737,
+		"time": 9
+	},
+	{
+		"campus": "East",
+		"source": "Neighborhood 2",
+		"destination": "East Bus Stop",
+		"distanceMi": 0.06,
+		"distanceKm": 0.0966,
+		"time": 1
+	},
+	{
+		"campus": "East",
+		"source": "Neighborhood 2",
+		"destination": "Marketplace",
+		"distanceMi": 0.2,
+		"distanceKm": 0.322,
+		"time": 4
+	},
+	{
+		"campus": "East",
+		"source": "Neighborhood 2",
+		"destination": "Lilly Library",
+		"distanceMi": 0.2,
+		"distanceKm": 0.322,
+		"time": 4
+	},
+	{
+		"campus": "East",
+		"source": "Neighborhood 3",
+		"destination": "Chapel",
+		"distanceMi": 1.7,
+		"distanceKm": 2.737,
+		"time": 12
+	},
+	{
+		"campus": "East",
+		"source": "Neighborhood 3",
+		"destination": "West Union",
+		"distanceMi": 1.6,
+		"distanceKm": 2.576,
+		"time": 10
+	},
+	{
+		"campus": "East",
+		"source": "Neighborhood 3",
+		"destination": "Perkins Library",
+		"distanceMi": 1.7,
+		"distanceKm": 2.737,
+		"time": 10
+	},
+	{
+		"campus": "East",
+		"source": "Neighborhood 3",
+		"destination": "East Bus Stop",
+		"distanceMi": 0.3,
+		"distanceKm": 0.483,
+		"time": 6
+	},
+	{
+		"campus": "East",
+		"source": "Neighborhood 3",
+		"destination": "Marketplace",
+		"distanceMi": 0.5,
+		"distanceKm": 0.805,
+		"time": 9
+	},
+	{
+		"campus": "East",
+		"source": "Neighborhood 3",
+		"destination": "Lilly Library",
+		"distanceMi": 0.4,
+		"distanceKm": 0.644,
+		"time": 8
+	},
+	{
+		"campus": "East",
+		"source": "Neighborhood 4",
+		"destination": "Chapel",
+		"distanceMi": 1.8,
+		"distanceKm": 2.898,
+		"time": 13
+	},
+	{
+		"campus": "East",
+		"source": "Neighborhood 4",
+		"destination": "West Union",
+		"distanceMi": 1.7,
+		"distanceKm": 2.737,
+		"time": 11
+	},
+	{
+		"campus": "East",
+		"source": "Neighborhood 4",
+		"destination": "Perkins Library",
+		"distanceMi": 1.7,
+		"distanceKm": 2.737,
+		"time": 11
+	},
+	{
+		"campus": "East",
+		"source": "Neighborhood 4",
+		"destination": "East Bus Stop",
+		"distanceMi": 0.2,
+		"distanceKm": 0.322,
+		"time": 5
+	},
+	{
+		"campus": "East",
+		"source": "Neighborhood 4",
+		"destination": "Marketplace",
+		"distanceMi": 0.3,
+		"distanceKm": 0.483,
+		"time": 4
+	},
+	{
+		"campus": "East",
+		"source": "Neighborhood 4",
+		"destination": "Lilly Library",
+		"distanceMi": 0.2,
+		"distanceKm": 0.322,
+		"time": 4
+	},
+	{
+		"campus": "East",
+		"source": "Neighborhood 5",
+		"destination": "Chapel",
+		"distanceMi": 1.6,
+		"distanceKm": 2.576,
+		"time": 15
+	},
+	{
+		"campus": "East",
+		"source": "Neighborhood 5",
+		"destination": "West Union",
+		"distanceMi": 1.5,
+		"distanceKm": 2.415,
+		"time": 13
+	},
+	{
+		"campus": "East",
+		"source": "Neighborhood 5",
+		"destination": "Perkins Library",
+		"distanceMi": 1.5,
+		"distanceKm": 2.415,
+		"time": 13
+	},
+	{
+		"campus": "East",
+		"source": "Neighborhood 5",
+		"destination": "East Bus Stop",
+		"distanceMi": 0.3,
+		"distanceKm": 0.483,
+		"time": 7
+	},
+	{
+		"campus": "East",
+		"source": "Neighborhood 5",
+		"destination": "Marketplace",
+		"distanceMi": 0.4,
+		"distanceKm": 0.644,
+		"time": 8
+	},
+	{
+		"campus": "East",
+		"source": "Neighborhood 5",
+		"destination": "Lilly Library",
+		"distanceMi": 0.3,
+		"distanceKm": 0.483,
+		"time": 7
+	},
+	{
+		"campus": "West",
+		"source": "Craven",
+		"destination": "Chapel",
+		"distanceMi": 0.1,
+		"distanceKm": 0.161,
+		"time": 4
+	},
+	{
+		"campus": "West",
+		"source": "Craven",
+		"destination": "West Union",
+		"distanceMi": 0.07,
+		"distanceKm": 0.11,
+		"time": 3
+	},
+	{
+		"campus": "West",
+		"source": "Craven",
+		"destination": "Perkins Library",
+		"distanceMi": 0.09,
+		"distanceKm": 0.14,
+		"time": 5
+	},
+	{
+		"campus": "West",
+		"source": "Craven",
+		"destination": "East Bus Stop",
+		"distanceMi": 1.7,
+		"distanceKm": 2.737,
+		"time": 9
+	},
+	{
+		"campus": "West",
+		"source": "Craven",
+		"destination": "Marketplace",
+		"distanceMi": 1.7,
+		"distanceKm": 2.737,
+		"time": 13
+	},
+	{
+		"campus": "West",
+		"source": "Craven",
+		"destination": "Lilly Library",
+		"distanceMi": 1.7,
+		"distanceKm": 2.737,
+		"time": 13
+	},
+	{
+		"campus": "West",
+		"source": "Crowell",
+		"destination": "Chapel",
+		"distanceMi": 0.3,
+		"distanceKm": 0.483,
+		"time": 6
+	},
+	{
+		"campus": "West",
+		"source": "Crowell",
+		"destination": "West Union",
+		"distanceMi": 0.2,
+		"distanceKm": 0.322,
+		"time": 4
+	},
+	{
+		"campus": "West",
+		"source": "Crowell",
+		"destination": "Perkins Library",
+		"distanceMi": 0.3,
+		"distanceKm": 0.483,
+		"time": 7
+	},
+	{
+		"campus": "West",
+		"source": "Crowell",
+		"destination": "East Bus Stop",
+		"distanceMi": 1.8,
+		"distanceKm": 2.898,
+		"time": 13
+	},
+	{
+		"campus": "West",
+		"source": "Crowell",
+		"destination": "Marketplace",
+		"distanceMi": 2,
+		"distanceKm": 3.22,
+		"time": 15
+	},
+	{
+		"campus": "West",
+		"source": "Crowell",
+		"destination": "Lilly Library",
+		"distanceMi": 1.9,
+		"distanceKm": 3.059,
+		"time": 15
+	},
+	{
+		"campus": "West",
+		"source": "Kilgo",
+		"destination": "Chapel",
+		"distanceMi": 0.3,
+		"distanceKm": 0.483,
+		"time": 4
+	},
+	{
+		"campus": "West",
+		"source": "Kilgo",
+		"destination": "West Union",
+		"distanceMi": 0.1,
+		"distanceKm": 0.161,
+		"time": 2
+	},
+	{
+		"campus": "West",
+		"source": "Kilgo",
+		"destination": "Perkins Library",
+		"distanceMi": 0.2,
+		"distanceKm": 0.322,
+		"time": 5
+	},
+	{
+		"campus": "West",
+		"source": "Kilgo",
+		"destination": "East Bus Stop",
+		"distanceMi": 1.7,
+		"distanceKm": 2.737,
+		"time": 12
+	},
+	{
+		"campus": "West",
+		"source": "Kilgo",
+		"destination": "Marketplace",
+		"distanceMi": 1.9,
+		"distanceKm": 3.059,
+		"time": 13
+	},
+	{
+		"campus": "West",
+		"source": "Kilgo",
+		"destination": "Lilly Library",
+		"distanceMi": 1.9,
+		"distanceKm": 3.059,
+		"time": 14
+	},
+	{
+		"campus": "West",
+		"source": "Keohane",
+		"destination": "Chapel",
+		"distanceMi": 0.4,
+		"distanceKm": 0.644,
+		"time": 9
+	},
+	{
+		"campus": "West",
+		"source": "Keohane",
+		"destination": "West Union",
+		"distanceMi": 0.3,
+		"distanceKm": 0.483,
+		"time": 7
+	},
+	{
+		"campus": "West",
+		"source": "Keohane",
+		"destination": "Perkins Library",
+		"distanceMi": 0.3,
+		"distanceKm": 0.483,
+		"time": 9
+	},
+	{
+		"campus": "West",
+		"source": "Keohane",
+		"destination": "East Bus Stop",
+		"distanceMi": 1.7,
+		"distanceKm": 2.737,
+		"time": 13
+	},
+	{
+		"campus": "West",
+		"source": "Keohane",
+		"destination": "Marketplace",
+		"distanceMi": 1.8,
+		"distanceKm": 2.898,
+		"time": 15
+	},
+	{
+		"campus": "West",
+		"source": "Keohane",
+		"destination": "Lilly Library",
+		"distanceMi": 1.8,
+		"distanceKm": 2.898,
+		"time": 15
+	},
+	{
+		"campus": "West",
+		"source": "Edens",
+		"destination": "Chapel",
+		"distanceMi": 0.4,
+		"distanceKm": 0.644,
+		"time": 10
+	},
+	{
+		"campus": "West",
+		"source": "Edens",
+		"destination": "West Union",
+		"distanceMi": 0.3,
+		"distanceKm": 0.483,
+		"time": 8
+	},
+	{
+		"campus": "West",
+		"source": "Edens",
+		"destination": "Perkins Library",
+		"distanceMi": 0.4,
+		"distanceKm": 0.644,
+		"time": 9
+	},
+	{
+		"campus": "West",
+		"source": "Edens",
+		"destination": "East Bus Stop",
+		"distanceMi": 1.6,
+		"distanceKm": 2.576,
+		"time": 14
+	},
+	{
+		"campus": "West",
+		"source": "Edens",
+		"destination": "Marketplace",
+		"distanceMi": 1.7,
+		"distanceKm": 2.737,
+		"time": 16
+	},
+	{
+		"campus": "West",
+		"source": "Edens",
+		"destination": "Lilly Library",
+		"distanceMi": 1.7,
+		"distanceKm": 2.737,
+		"time": 16
+	},
+	{
+		"campus": "West",
+		"source": "Wannamaker",
+		"destination": "Chapel",
+		"distanceMi": 0.4,
+		"distanceKm": 0.644,
+		"time": 10
+	},
+	{
+		"campus": "West",
+		"source": "Wannamaker",
+		"destination": "West Union",
+		"distanceMi": 0.3,
+		"distanceKm": 0.483,
+		"time": 8
+	},
+	{
+		"campus": "West",
+		"source": "Wannamaker",
+		"destination": "Perkins Library",
+		"distanceMi": 0.3,
+		"distanceKm": 0.483,
+		"time": 10
+	},
+	{
+		"campus": "West",
+		"source": "Wannamaker",
+		"destination": "East Bus Stop",
+		"distanceMi": 1.8,
+		"distanceKm": 2.898,
+		"time": 14
+	},
+	{
+		"campus": "West",
+		"source": "Wannamaker",
+		"destination": "Marketplace",
+		"distanceMi": 1.9,
+		"distanceKm": 3.059,
+		"time": 16
+	},
+	{
+		"campus": "West",
+		"source": "Wannamaker",
+		"destination": "Lilly Library",
+		"distanceMi": 1.9,
+		"distanceKm": 3.059,
+		"time": 16
+	}
+ ]

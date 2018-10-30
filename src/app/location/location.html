@@ -1,0 +1,100 @@
+<div>
+    <h2 [matTooltip]="translateService.secondaryTranslation.welcome">{{translateService.primaryTranslation.welcome}}!</h2>
+</div>
+
+<div class="container">
+    <div class="locations-row-container">
+        <label class="location-label" [matTooltip]="translateService.secondaryTranslation.selectLocation">
+          {{translateService.primaryTranslation.selectLocation}}:
+        </label>
+        <button mat-raised-button [matTooltip]="translateService.secondaryTranslation.east" color="primary" class="location-button east" (click)="updateDropdown(campuses.east.name)">
+          {{translateService.primaryTranslation.east}}
+        </button>
+        <button mat-raised-button [matTooltip]="translateService.secondaryTranslation.west" color="primary" class="location-button west"  (click)="updateDropdown(campuses.west.name)">
+          {{translateService.primaryTranslation.west}}
+        </button>
+        <button mat-raised-button [matTooltip]="translateService.secondaryTranslation.central" color="primary" class="location-button central" (click)="updateDropdown(campuses.central.name)">
+          {{translateService.primaryTranslation.central}}
+        </button>
+    </div>
+
+    <br>
+
+    <div class="dorms-row-container">
+      <label class="dorm-label" [matTooltip]="translateService.secondaryTranslation.selectDorm">
+        {{translateService.primaryTranslation.selectDorm}}:
+      </label>
+      <form class="dorm-form">
+          <mat-form-field class="example-full-width">
+            <input type="text" [placeholder]="translateService.primaryTranslation.pickOne" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
+            <mat-autocomplete #auto="matAutocomplete">
+              <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                {{option}}
+              </mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+        </form>
+      <button
+        mat-raised-button
+        color="primary"
+        class="button submit-button"
+        (click)="submitLocation()"
+        [matTooltip]="translateService.secondaryTranslation.submit"
+      >
+        {{translateService.primaryTranslation.submit}}
+      </button>
+    </div>  
+
+    <br>
+
+    <div>
+      <label class="dorm-label" (display)="myLocation" [matTooltip]="translateService.secondaryTranslation.defaultLocation">
+        {{translateService.primaryTranslation.defaultLocation}}:   {{myLocation}}
+      </label>
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div>
+        <button mat-raised-button 
+              [matTooltip]="translateService.secondaryTranslation.reportErr" 
+              color="primary" 
+              class="error-button west" 
+        >
+              <a target="_blank" href='https://duke.qualtrics.com/jfe/form/SV_0GOyAghD2OJSsGV'>{{translateService.primaryTranslation.reportErr}}</a>
+        </button>
+
+        <button mat-raised-button 
+            [matTooltip]="translateService.secondaryTranslation.feedback" 
+            color="primary" 
+            class="feedback-button central" 
+      >
+        <a target="_blank" href="https://duke.qualtrics.com/jfe/form/SV_5nJNoy1K1ZtyN2l">{{translateService.primaryTranslation.feedback}}</a>
+      </button>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+<div class="east-nbhd">
+  <h4>KEY: East Campus Neighborhoods</h4>
+  <ul>
+    <li>Neighborhood 1: Alspaugh, Bassett, Brown, Pegram</li>
+  </ul>
+  <ul>
+    <li>Neighborhood 2: East House, Epworth, Giles, Jarvis, Wilson</li>
+  </ul>
+  <ul>
+    <li>Neighborhood 3: Gilbert-Addoms (GA), Southgate</li>
+  </ul>
+  <ul>
+    <li>Neighborhood 4: Blackwell, Randolph</li>
+  </ul>
+  <ul>
+    <li>Neighborhood 5: Bell Tower, Trinity</li>
+  </ul>
+</div>

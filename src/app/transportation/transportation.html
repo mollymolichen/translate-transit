@@ -1,0 +1,37 @@
+  <div class="container landmarks">
+    <h2 >{{translateService.primaryTranslation.transportationLearnMore}}</h2>
+  </div>
+  
+  <div class="flex-container">
+      <div class="landmark-container">
+        <img class="flex-grid-elem" src="../../assets/img/dukebus.png">
+        <label class="flex-grid-elem" [matTooltip]="translateService.secondaryTranslation.dukeBus">
+          <a href="https://parking.duke.edu/buses" target="_blank">{{translateService.primaryTranslation.dukeBus}}</a>
+        </label>
+      </div>
+      
+      <div class="landmark-container">
+        <img class="flex-grid-elem" src="../../assets/img/transloc.png">
+          <label class="flex-grid-elem" [matTooltip]="translateService.secondaryTranslation.transloc">
+            <a href="http://duke.transloc.com/" target="_blank">{{translateService.primaryTranslation.transloc}}</a>
+          </label>
+      </div>
+
+      <div class="landmark-container">
+        <img class="flex-grid-elem" src="../../assets/img/parking.png">
+        <label class="flex-grid-elem" [matTooltip]="translateService.secondaryTranslation.parking">
+            <a href="https://parking.duke.edu/parking">
+              {{translateService.primaryTranslation.parking}}
+            </a>
+        </label>
+      </div>
+
+      <div class="landmark-container">
+        <img class="flex-grid-elem" src="../../assets/img/bikes.png">
+        <label class="flex-grid-elem" [matTooltip]="translateService.secondaryTranslation.altTransport">
+            <a href="https://parking.duke.edu/alternative/bicycling/bike-sharing" target="_blank">
+              {{translateService.primaryTranslation.altTransport}}
+            </a>
+          </label>
+      </div>
+  </div>
