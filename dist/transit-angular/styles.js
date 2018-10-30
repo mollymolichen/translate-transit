@@ -580,8 +580,8 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/mollychen/Desktop/Fall 2018/ECE 590S/Project 1/transit-molly/src/styles.css */"./src/styles.css");
-module.exports = __webpack_require__(/*! /Users/mollychen/Desktop/Fall 2018/ECE 590S/Project 1/transit-molly/node_modules/flag-icon-css/css/flag-icon.css */"./node_modules/flag-icon-css/css/flag-icon.css");
+__webpack_require__(/*! /Users/mollychen/Desktop/translate-transit/src/styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! /Users/mollychen/Desktop/translate-transit/node_modules/flag-icon-css/css/flag-icon.css */"./node_modules/flag-icon-css/css/flag-icon.css");
 
 
 /***/ })

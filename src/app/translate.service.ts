@@ -9,7 +9,7 @@ export class TranslateService {
   primaryTranslation;
   secondaryTranslation
 
-  subscriptionKey = '2143d6e1024f4580a1007aa5f8ee334c';
+  subscriptionKey = '81d672c072d14360961af0a71555cecf';
   host = 'https://api.cognitive.microsofttranslator.com';
   path = '/translate?api-version=3.0';
   headers = new HttpHeaders()

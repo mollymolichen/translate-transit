@@ -451,7 +451,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var TranslateService = /** @class */ (function () {
     function TranslateService(http) {
         this.http = http;
-        this.subscriptionKey = '2143d6e1024f4580a1007aa5f8ee334c';
+        this.subscriptionKey = '81d672c072d14360961af0a71555cecf';
         this.host = 'https://api.cognitive.microsofttranslator.com';
         this.path = '/translate?api-version=3.0';
         this.headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]()
@@ -660,7 +660,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/mollychen/Desktop/Fall 2018/ECE 590S/Project 1/transit-molly/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/mollychen/Desktop/translate-transit/src/main.ts */"./src/main.ts");
 
 
 /***/ })
